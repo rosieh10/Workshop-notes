@@ -1,0 +1,38 @@
+# 3.-Functions
+
+**What is a function?**
+
+A part of code that delivers an action
+
+**Give an example (with an explanation) of how you write a function with no arguments**
+
+```swift
+
+func dosomething(){
+print("Rosie")
+}
+
+```
+
+**Show how you would "call" this function**
+
+**What are function "arguments" or "parameters?"**
+
+Arguments are a form of code that tell us to do something
+Parameters are
+
+**Give an example (with an explanation) of how you write a function with one argument**
+
+**Show how you would "call" this function**
+
+**Give an example (with an explanation) of how you write a function with multiple arguments of different types**
+
+**Show how you would "call" this function**
+
+**What are return values?**
+
+**Give an example of a function that returns a value**
+
+**Show how you would "call" this function**
+
+**How do you access functions of a class? Give an example**

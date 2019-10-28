@@ -1,0 +1,55 @@
+# 6.-UIElements
+**What is a UIElement?**
+
+A base class for most of the Windows Runtime UI objects that have visual appearance and can process basic input as part of your app's user interface
+
+**What does UI stand for?**
+
+User Interface
+
+**What symbol signals that a connections has been broken in your View Controller Class?**
+
+The filled circle will be blank and empty
+
+**How can you reconnect a broken link on a UIElement from your View Controller Class to the storyboard?**
+
+ctrl, click a button and drag below VDL, type...
+ imageView.image = UIImage.init(named: "blablabla")
+
+**What symbol signals that a connections has been broken in your Storyboard Connections Inspector?**
+
+A yellow triangle
+
+**How to remove a broken connections in the connections inspector?**
+
+Delete the link with the caution sign next to it and re-do the function
+
+**How to link a UIElement to View Controller class?**
+
+Click 'Assets.xcassets' in the left bar. and drag your images into the blank column
+
+**How to embed a navigation controller?**
+
+
+
+**Where to keep local images within your project?**
+
+In 'Assets.xcassets'
+
+**Describe an IBAction?**
+
+Completes an action you wish to carry out
+You place these below ViewDidLoad
+
+**Desicbe an IBOutlet?**
+
+They don't complete actions, they are just there e.g. label, image
+You place these above ViewDidLoad
+
+**Label the following elements as outlets and/or actions (it might be useful to add snippets of code in here):**
+
+Slider - Action
+Button - Action
+Label - Outlet
+Progress Bar - 
+Image View - Outlet

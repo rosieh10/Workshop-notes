@@ -1,0 +1,48 @@
+# DMD-notes
+
+**How do you print things out the debug area?**
+
+```swift
+
+print()
+
+```
+
+**What is the shortcut to run your app?**
+
+cmd R
+
+**What does "IB" mean?**
+
+Interface Builder
+
+**How do you connect things from your storyboard to your code?**
+
+ctrl, select button on story board, drag to a line of code, drop, name it
+
+**What's the difference between an IBOutlet and an IBAction?**
+
+IBOutlets are used for referencing something that's on the storyboard
+
+IBActions are used for "actions"
+
+**What is the name of the function that gets called automaticaly in your view controller classes?**
+
+```swift
+
+override func viewDidLoad() {
+
+}
+```
+
+**What is the assistant editor and what does it do?**
+
+it allows you to view both the storyboard and the controller. It's the 3 lines on the right in storyboard
+
+**Where is the icon for the Attribute Inspector, where is it located and what does it do?**
+
+On the storyboard, on the far right, looks like a little pointer
+
+**Where is the icon for the project navigator and where is it located?**
+
+On the left which allows you to change files

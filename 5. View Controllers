@@ -1,0 +1,39 @@
+# 5.-View-controllers
+**Generally describe what a View Controller is.**
+
+View controllers are the foundation of your app's internal structure
+
+**All your view controllers are "sub classes" of what?**
+
+
+
+**What is the life cycle of the view controller?**
+
+
+
+**Name at least two (other than the one given) of the functions we can use in this life cycle.**
+
+  viewDidLoad()
+**What is a segue?**
+
+Transitioning from one screen to another screen
+
+**What is the segue "Identifier"?**
+
+The name of the transition screen
+
+**How do you setup a segue from a button in your storyboard?**
+
+Ctrl, click, drag, click 'show'
+
+**How do you setup a segue between view controllers (ie without using a button)?**
+
+ctrl, click the square in a circle button above the phone screen, drag to another screen, clcik 'show'
+
+**How do you call a segue programatically?**
+
+First, select a segue in your storyboard, then go to the attributes inspector and give it a name such as “showDetail”.
+
+Now head to your Swift code, to the place where you want to trigger the segue you just named. The method you need to call is performSegue(), which exists on all view controllers: pass it a segue identifier as well as whatever object you want to send along
+
+**Briefly describe how you pass data between two view controllers (you may want to save some snippets of code here)?**

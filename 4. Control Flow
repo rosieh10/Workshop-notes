@@ -1,0 +1,38 @@
+# 4.-Control.Flow
+**What is control flow?**
+
+The order of where and when you put your function
+
+**Why is control flow important?**
+
+
+
+**What is an array?**
+
+An array is a list
+
+**What is an if statement?**
+
+If something isn't one thing, it's the other 
+
+**What is a guard statement?**
+
+Like an if statement but more secure. Always needs a return 
+
+**What is else used for and what is the notation for it?**
+
+It provides the other option
+
+**Why do you have to use else in a gaurd statement?**
+
+Else follows if - It provides the other option e.g: if this happens do this..., else do this...
+
+**Describe a loop statement?**
+
+Enables the user to have another go e.g: re-type the password
+
+**Which statement does 'for in' most commonly use?**
+
+
+VARIABLES @ TOP
+FUNCTIONS @ BOTTOM

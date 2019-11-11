@@ -1,0 +1,35 @@
+contains both location(go over - not in workshop) and MapKit
+
+hold alt = pinch to zoom
+set minimum and maximum values (-90, 90) (-180,180)
+
+create 'mapView'outlet above VDL
+
+create 'latSlider' outlet
+
+create 'longSlider' outlet
+
+add a button and name 'go' as an action (below VDL)
+
+latlong.net allows you to find coordinates
+
+create an annotation below VDL - "let annotation = MKPointAnnotation()
+                                 annotation.title = "Hello World"
+                                 annotation.coordinate = CLLocationCoordinate2D(latitude: 50.721680, longitude: -1.878530)"
+                                 
+below, type "mapView.addAnnotation(annotation)"
+
+bleow 'go' button action, type: "let annotation = MKPointAnnotation()
+                                 annotation.coordinate = CLLocationCoordinate2D(latitude: Double(latSlider!.value), longitude: Double(longSlider!.value)"
+                                 
+below, type:  "mapView.addAnnotation(annotation)
+               mapView.showAnnotations([annotation], animated: true)"
+              
+to remove annotations, below iBAction for 'go', type: "mapView.removeAnnotations(mapView.annotations)"
+
+GEOCODER;
+- create geocoder above VDL: " let geocoder = CLGeocoder()"
+- To create the action, at the bottom of the page, type: "let location = CLLocation(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude)
+        
+                                                          geocoder.reverseGeocodeLocation(location) { (placemark, error) in
+                                                          annotation.title = placemark?.first?.country"

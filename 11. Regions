@@ -5,3 +5,44 @@ What are the maximum number of regions you can monitor for in a single app?
 ...What would be one way around this limit?
 
 What are the two functions that notify you about a user entering/exiting a region?
+
+**How I made this:**
+
+open p-list file - create new row and paste the privacy statements there, name them (e.g. hello world)
+
+type "import MapKit" @ top
+
+create outlets
+
+type "let locationManager = CLLocationManager()" above VDL
+
+type "locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()" below VDL
+        
+type "extension ViewController: CLLocationManagerDelegate {
+        
+        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+          print(locations.last!)" below
+          
+file, new, file..., GPXfile, save 
+
+Go to main DMD homepage and click 'simulating location', copy and paste the code over all of the location.gpx code
+
+On storyborad, click Mapview and open attributes inspection. check 'user location'
+
+under VDL, type " map.userTrackingmode = .follow"
+
+How to turn on little blue arrow: top left click name of project and click "edit scheme", options, default location, select location
+
+Under mapView... type "let coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)"
+
+go to gpx file, copy the second lat and long and paste in code
+
+below "let coordinate..." type " let region = CLCircularRegion(center: coordinate, radius: 100, identifier: "Pier")
+        locationManager.startMonitoring(for: region)"
+
+below type "   func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+            print(region.identifier)"
+        
+
